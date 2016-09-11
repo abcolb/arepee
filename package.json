@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/akbarry/arepee/issues"
   },
-  "homepage": "https://github.com/akbarry/arepee#readme"
+  "homepage": "https://github.com/akbarry/arepee#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ejs": "2.5.2"
+  }
 }
