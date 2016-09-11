@@ -1,0 +1,17 @@
+{
+  "name": "arepee",
+  "description": "#reactjs #expressjs #personal",
+  "main": "index.js",
+  "authors": [
+    "akbarry"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/akbarry/arepee",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
