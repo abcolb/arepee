@@ -1,7 +1,10 @@
-var express = require('express');
+'use es6';
 
+var express = require('express');
 var app = new express();
 
-app.get('/', function(req,res){
-  res.render('./../app/index.ejs', {});
-}).listen(7777);
+app.get('/', (req,res) => {
+  res.render('./../app/index.ejs');
+})
+.use(express.static(__dirname + './../.tmp'))
+.listen(7777);
