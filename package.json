@@ -1,0 +1,26 @@
+{
+  "name": "arepee",
+  "version": "1.0.0",
+  "description": "#reactjs #expressjs #personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akbarry/arepee.git"
+  },
+  "author": "akbarry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akbarry/arepee/issues"
+  },
+  "homepage": "https://github.com/akbarry/arepee#readme",
+  "dependencies": {
+    "browser-sync": "^2.15.0",
+    "ejs": "2.5.2",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30"
+  }
+}
