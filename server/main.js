@@ -1,7 +1,9 @@
+'use es6';
+
 var express = require('express');
 var app = new express();
 
-app.get('/', function(req,res){
+app.get('/', (req,res) => {
   res.render('./../app/index.ejs');
 })
 .use(express.static(__dirname + './../.tmp'))

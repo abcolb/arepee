@@ -1,5 +1,9 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var ProposedActivity = require('./components/ProposedActivity.jsx');
+'use es6';
 
-ReactDOM.render(<ProposedActivity />, app);
+const React = require('react');
+const ReactDOM = require('react-dom');
+const ProposedActivity = require('./components/ProposedActivity');
+
+const PROPOSED_ACTIVITIES_TITLE = 'Proposed Activities';
+
+ReactDOM.render(<ProposedActivity title={PROPOSED_ACTIVITIES_TITLE} />, app); // eslint-disable-line no-undef
