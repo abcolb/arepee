@@ -2,13 +2,14 @@
   "name": "arepee",
   "version": "1.0.0",
   "description": "#reactjs #expressjs #personal",
-  "main": "index.js",
+  "main": "index.ejs",
   "babel": {
     "presets": [
       "es2015"
     ]
   },
   "scripts": {
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
