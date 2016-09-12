@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/akbarry/arepee#readme",
   "dependencies": {
+    "browser-sync": "^2.15.0",
+    "ejs": "2.5.2",
     "express": "^4.14.0",
-    "ejs": "2.5.2"
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30"
   }
 }
