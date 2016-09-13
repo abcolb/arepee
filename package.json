@@ -26,7 +26,6 @@
     "browserify": "^13.1.0",
     "ejs": "2.5.2",
     "express": "^4.14.0",
-    "foundation-sites": "^6.2.3",
     "gulp": "^3.9.1",
     "gulp-live-server": "0.0.30",
     "react": "^15.3.1",
