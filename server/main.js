@@ -1,10 +1,11 @@
 'use es6';
 
-var express = require('express');
-var app = new express();
+const Express = require('express');
 
-app.get('/', (req,res) => {
+const app = new Express();
+
+app.get('/', (req, res) => {
   res.render('./../app/index.ejs');
 })
-.use(express.static(__dirname + './../.tmp'))
-.listen(7777);
+.use(Express.static(`${__dirname} ./../.tmp`))
+.listen(process.env.PORT || 7777);
