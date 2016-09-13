@@ -1,6 +1,10 @@
 {
   "extends": "eslint-config-airbnb",
   "rules": {
-    "max-len": "off"
+    "arrow-body-style": "off",
+    "max-len": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-no-target-blank": "off",
+    "comma-dangle": "off"
   }
 }
