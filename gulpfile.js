@@ -1,16 +1,18 @@
-var gulp = require('gulp');
-var gulpLiveServer = require('gulp-live-server');
-var browserSync = require('browser-sync');
-var browserify = require('browserify');
-var reactify = require('reactify');
-var source = require('vinyl-source-stream');
+'use es6';
 
-gulp.task('live-server', function(){
-  var server = new gulpLiveServer('server/main.js');
+const gulp = require('gulp');
+const GulpLiveServer = require('gulp-live-server');
+const browserSync = require('browser-sync');
+const browserify = require('browserify');
+const reactify = require('reactify');
+const source = require('vinyl-source-stream');
+
+gulp.task('live-server', () => {
+  const server = new GulpLiveServer('server/main.js');
   server.start();
-})
+});
 
-gulp.task('bundle', function(){
+gulp.task('bundle', () => {
   return browserify({
     entries: 'app/main.jsx',
     debug: true
@@ -18,14 +20,14 @@ gulp.task('bundle', function(){
   .transform(reactify)
   .bundle()
   .pipe(source('app.js'))
-  .pipe(gulp.dest('./.tmp'))
-})
+  .pipe(gulp.dest('./.tmp'));
+});
 
-gulp.task('serve', ['bundle','live-server'], function(){
+gulp.task('serve', ['bundle', 'live-server'], () => {
   browserSync.init(
     null, {
-      proxy:'http://localhost:7777',
+      proxy: 'http://localhost:7777',
       port: 9001
     }
-  )
-})
+  );
+});
