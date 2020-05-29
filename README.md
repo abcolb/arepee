@@ -1,2 +1,2 @@
-# arepee
-Bringin home the pebblez
+# Sandbox React app + Heroku configuration
+:construction:
